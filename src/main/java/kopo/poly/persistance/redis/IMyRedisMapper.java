@@ -11,7 +11,10 @@ public interface IMyRedisMapper {
 
     RedisDTO getRedisString(String redisKey) throws Exception;
 
+
     int saveRedisStringJSON(String redisKey, RedisDTO pDTO) throws Exception;
+
+    RedisDTO getRedisStringJSON(String redisKey) throws Exception;
 
     int saveRedisList(String redisKey, List<RedisDTO> pDTO) throws Exception;
 
@@ -22,5 +25,25 @@ public interface IMyRedisMapper {
     List<RedisDTO> getRedisListJSON(String redisKey) throws Exception;
 
     int saveRedisListJSONRamda(String redisKey, List<RedisDTO> pList) throws Exception;
+
+    List<RedisDTO> getRedisListJSONRamda() throws Exception;
+    int saveRedisHash(String redisKey, RedisDTO pDTO) throws Exception;
+    RedisDTO getRedisHash(String redisKey) throws Exception;
+
+    int saveRedisSetJSONRamda(String redisKey, Set<RedisDTO> pSet) throws Exception;
+
+    Set<RedisDTO> getRedisSetJSONRamda(String redisKey) throws Exception;
+
+
+    int saveRedisZSetJSON(String redisKey, List<RedisDTO> pList) throws Exception;
+
+
+    Set<RedisDTO> getRedisZSetJSON(String redisKey) throws Exception;
+
+
+    boolean deleteDataJSON(String redisKey) throws Exception;
+
+
+    boolean deleteDataString(String redisKey) throws Exception;
 
 }

@@ -27,9 +27,9 @@ public class MongoService implements IMongoService {
         String colNm = "MONGODB_TEST";
 
         MongoDTO pDTO = new MongoDTO();
-        pDTO.setUser_nm("장석원");
-        pDTO.setAddr("일산");
-        pDTO.setEmail("2120110032@student.kopo.ac.kr");
+        pDTO.setUser_nm("임수상");
+        pDTO.setAddr("서울");
+        pDTO.setEmail("2120110031@student.kopo.ac.kr");
 
         // MongoDB에 데이터저장하기
         mongoMapper.insertData(pDTO, colNm);

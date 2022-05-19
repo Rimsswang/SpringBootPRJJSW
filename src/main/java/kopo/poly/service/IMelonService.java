@@ -64,4 +64,6 @@ public interface IMelonService {
      * 가수의 노래 삭제
      */
     int deleteSong() throws Exception;
+
+    int deleteBTSSong() throws Exception;
 }

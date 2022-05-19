@@ -138,7 +138,7 @@ public class MelonController {
     /**
      * 가수 이름 방탄소년단을 BTS로 변경
      */
-    @GetMapping(value = "melon/btsAddNickName")
+    @GetMapping(value = "melon/btsAddNickname")
     public String btsAddField() throws Exception {
 
         log.info(this.getClass().getName() + ".btsAddNickname Start!");
